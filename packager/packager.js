@@ -299,7 +299,7 @@ function getAppMiddleware(options) {
     transformModulePath: transformerPath,
     assetRoots: options.assetRoots,
     assetExts: ['png', 'jpeg', 'jpg'],
-    resetCache: options.resetCache || options['reset-cache'],
+    resetCache: true,
     polyfillModuleNames: [
       require.resolve(
         '../Libraries/JavaScriptAppEngine/polyfills/document.js'
